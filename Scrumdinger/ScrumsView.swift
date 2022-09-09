@@ -13,13 +13,23 @@ struct ScrumsView: View {
     
     var body: some View {
         // we're putting everything in a special kind of view called a list
-        // this basically puts everything under it in a scrollable view
+        // this basically puts everything under it in a view
         List {
             // this is how we populate it. This is saying "for each DailyScrum data type in the scrums variable we have on top,
             // we're going to stick it in a card view, make the background of the card the main theme color of the scrum"
-            ForEach(scrums, id: \.title) { scrum in
-                CardView(scrum: scrum)
-                    .listRowBackground(scrum.theme.mainColor)
+            ForEach(scrums) { scrum in
+                NavigationLink (destination: DetailView(scrum: scrum)) {
+                    CardView(scrum: scrum)
+
+                }
+                .listRowBackground(scrum.theme.mainColor)
+
+            }
+        }
+        .navigationTitle("Daily Scrums")
+        .toolbar {
+            Button(action: {}) {
+                Image(systemName: "plus")
             }
         }
     }
@@ -27,6 +37,9 @@ struct ScrumsView: View {
 
 struct ScrumsView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrumsView(scrums: DailyScrum.sampleData)
+        NavigationView {
+            ScrumsView(scrums: DailyScrum.sampleData)
+
+        }
     }
 }

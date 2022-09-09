@@ -17,7 +17,8 @@
 		7CB413F726EAC76E00544BA7 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB413F626EAC76E00544BA7 /* TrailingIconLabelStyle.swift */; };
 		AA0F3C2E27208AB300945F09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C2D27208AB300945F09 /* README.md */; };
 		AA0F3C3C27208AC000945F09 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C3027208ABF00945F09 /* LICENSE.txt */; };
-		AA0F3C4727208AD400945F09 /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AA0F3C4627208AD400945F09 /* SampleCode.xcconfig */; };
+		FB2A94B828CAAFD400F64DF1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A94B728CAAFD400F64DF1 /* DetailView.swift */; };
+		FB2A94BA28CAFF0100F64DF1 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2A94B928CAFF0100F64DF1 /* DetailEditView.swift */; };
 		FB93732728C9F212004B58CF /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB93732628C9F212004B58CF /* ScrumsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,8 @@
 		AA0F3C2D27208AB300945F09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AA0F3C3027208ABF00945F09 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		AA0F3C4627208AD400945F09 /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
+		FB2A94B728CAAFD400F64DF1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FB2A94B928CAFF0100F64DF1 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		FB93732628C9F212004B58CF /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +75,8 @@
 			children = (
 				7CB413EF26EA97B300544BA7 /* Models */,
 				7CB413DE26EA824100544BA7 /* ScrumdingerApp.swift */,
+				FB2A94B928CAFF0100F64DF1 /* DetailEditView.swift */,
+				FB2A94B728CAAFD400F64DF1 /* DetailView.swift */,
 				FB93732628C9F212004B58CF /* ScrumsView.swift */,
 				7CB413F426EAC55200544BA7 /* CardView.swift */,
 				7CB413E026EA824100544BA7 /* MeetingView.swift */,
@@ -143,7 +148,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					7CB413DA26EA824100544BA7 = {
 						CreatedOnToolsVersion = 13.0;
@@ -176,7 +181,6 @@
 				AA0F3C3C27208AC000945F09 /* LICENSE.txt in Resources */,
 				AA0F3C2E27208AB300945F09 /* README.md in Resources */,
 				7CB413E626EA824300544BA7 /* Preview Assets.xcassets in Resources */,
-				AA0F3C4727208AD400945F09 /* SampleCode.xcconfig in Resources */,
 				7CB413E326EA824300544BA7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +193,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CB413F326EABF1D00544BA7 /* DailyScrum.swift in Sources */,
+				FB2A94B828CAAFD400F64DF1 /* DetailView.swift in Sources */,
+				FB2A94BA28CAFF0100F64DF1 /* DetailEditView.swift in Sources */,
 				7CB413F726EAC76E00544BA7 /* TrailingIconLabelStyle.swift in Sources */,
 				7CB413F126EA97C500544BA7 /* Theme.swift in Sources */,
 				FB93732728C9F212004B58CF /* ScrumsView.swift in Sources */,
@@ -328,6 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_TEAM = A93P32RDMK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -358,6 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
+				DEVELOPMENT_TEAM = A93P32RDMK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
